@@ -59,6 +59,19 @@ public class Main1 {
         System.out.println("Perimeter:"+triangle1.calculatePerimeter());
         System.out.println("Area:"+triangle1.calculateArea());
 
+        System.out.println();
+        System.out.println("Interface and Classes implement with interfaces");
+        separatedLines();
+
+        Manager manager1 = new Manager("Diego",2000,1000);
+        Programmer programmer1 = new Programmer("Enrique",3000,10);
+        System.out.println("Interface :"+ Employee.class.getSimpleName());
+        System.out.println("Class 1 implement with interface: "+ manager1.getClass().getSimpleName());
+        System.out.println(manager1.getInformation());
+        System.out.println("Class 2 implement with interface: "+ programmer1.getClass().getSimpleName());
+        System.out.println(programmer1.getInformation());
+
+
     }
 
 }
